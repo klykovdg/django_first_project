@@ -6,19 +6,15 @@
 </head>
 <body>
   <h1>Contact with us</h1>
-  {% if errors %}
-    <ul>
-      {% for error in errors %}
-      <li>{{ error }}</li>
-      {% endfor %}
-    </ul>
+  {% if form.errors %}
+  	<p style="color: red;">
+		Please, edit the next error{{ form.errors|pluralize }}
+	</p>
   {% endif %}
-  <form action="/contact/" method="post">
-    <p>Theme: <input type="text" name="subject"></p>
-    <p>You e-mail (optional): <input type="text" name="e-mail"></p>
-    <p>Message:
-      <textarea name="message" rows="10" cols="50"></textarea>
-    </p>
+  <form action="" method="post">{% csrf_token %}
+    <table>
+	{{ form.as_table }}
+    </table>
     <input type="submit" value="Submit">
   </form>
 </body>

@@ -10,4 +10,5 @@ urlpatterns = [
     path('admin/', admin.site.urls), path('hello/', hello), path('time/', get_date),
     path('time/plus/<int:hour>/', hours_ahead), path('meta/', display_meta),
     path('search-form/', views.search_form), path('search/', views.search),
+    path('contact/', views.contact), path('contact/thanks/', views.thanks),
 ]

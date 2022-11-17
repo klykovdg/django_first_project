@@ -1,0 +1,17 @@
+subject The best site I've ever seen!
+message Not bad!
+email klykovdg@gmail.com
+
+Review was sent to ['siteowner@example.com']subject Not bad!
+message Not bad! I liked it from the first sight!
+email klykovdg@gmail.com
+
+Review was sent to ['siteowner@example.com']subject The best site I've ever seen!
+message Not bad at all
+email 
+Review was sent to ['siteowner@example.com']
+
+Subject: The best site I've ever seen!
+Review: Unfortunately, only one book presents on your site
+E-mail: dostoevsky@ya.ru
+Review was sent to ['siteowner@example.com']
