@@ -1,0 +1,12 @@
+<p>You tried to find: <strong>{{ query  }}</strong></p>
+
+{% if books  %}
+	<p>It is found: {{ books|length  }} book{{ books|pluralize }}</p>
+	<ul>
+		{% for book in books  %}
+		<li>{{ book.title  }}</li>
+		{% endfor  %}
+	</ul>
+{% else  %}
+	<p>Books, satisfying set criteria, have not been found</p>
+{% endif  %}

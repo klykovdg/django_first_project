@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}META information{% endblock %}
+
+{% block content  %}
+<h2>Request attributes</h2>
+<p>This is path {{ request.path }}</p>
+<p>This is host name {{ request.get_host }}</p>
+<p>This is path with request {{ request.get_full_path }}</p>
+<p>Is https {{ request.is_secure }}</p>
+<hr>
+<h2>Meta</h2>
+<table>
+{% for item in meta_val %}
+	<tr><td>{{ item.0 }}</td><td>{{ item.1 }}</td></tr>
+{% endfor  %}
+</table>
+{% endblock  %}
